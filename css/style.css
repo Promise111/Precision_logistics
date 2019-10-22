@@ -10841,3 +10841,20 @@ img{
 	color: white;
 	
 }
+.dd{
+	padding-left: 5px;
+	/* color: #666666; */
+	color: blue;
+}
+.post-section{
+	padding: 50px;
+	color: black;
+	background-color: whitesmoke;
+}
+.post-title{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.post-content{
+	text-align: justify;
+}
