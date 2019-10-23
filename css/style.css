@@ -10919,3 +10919,6 @@ img{
 .theme-btn{
 	background-color: #354077;
 }
+.fix_up:hover{
+	background-color: white !important;
+}
