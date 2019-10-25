@@ -10922,3 +10922,20 @@ img{
 .fix_up:hover{
 	background-color: white !important;
 }
+.sec-prod{
+	padding: 20px;
+	color: black;
+}
+.prod-img{
+	margin-bottom: 20px;
+}
+.prod-cont h4{
+	margin-bottom: 20px;
+	text-align: justify;
+}
+ .prod-cont{
+	margin-right: 50px;
+}
+.wrapper{
+	margin-bottom: 20px;
+}

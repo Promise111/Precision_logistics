@@ -1,17 +1,26 @@
+<?php
+$username = $email = $phone = $subject = $message = "";
+    if (isset($_POST['submit'])){
+        $name = htmlspecialchars($_POST['name']);
+        $email = htmlspecialchars($_POST['email']);
+        $phone = htmlspecialchars($_POST['phone']);
+        $message = htmlspecialchars($_POST['message']);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from t.commonsupport.com/induzin/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Oct 2019 14:37:11 GMT -->
+<!-- Mirrored from t.commonsupport.com/induzin/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Oct 2019 14:27:59 GMT -->
 <head>
 <meta charset="utf-8">
-<title>Precision Logistics | Services Page</title>
+<title>Precision Logistics | Contact Page</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet">
 
-<!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> -->
-<!-- <link rel="icon" href="images/favicon.png" type="image/x-icon"> -->
+<!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon"> -->
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,7 +64,7 @@
             <div class="auto-container">
                 <div class="main-box clearfix">
                     <div class="logo-outer">
-                        <div class="logo"><a href="index.html"><img src="images/precision_logo.jpeg" alt="" title=""></a></div>
+                        <div class="logo"><a href="index.php"><img src="images/precision_logo.jpeg" alt="" title=""></a></div>
                     </div>
 
                     <!--Nav Box-->
@@ -67,25 +76,25 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li><a href="index.html">Home</a>                              
+                                    <li><a href="index.php">Home</a>                              
                                     </li>
-                                    <li class="dropdown"><a href="about.html">About Us<span class="dd">+</span></a>
+                                    <li class="dropdown"><a href="about.php">About Us<span class="dd">+</span></a>
                                         <ul>
-                                            <li><a href="HSE.html">Corporate Certificates & HSE Policies</a></li>
+                                            <li><a href="HSE.php">Corporate Certificates & HSE Policies</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown current"><a href="services.html">Our Services<span class="dd">+</span></a>
+                                    <li class="dropdown"><a href="services.php">Our Services<span class="dd">+</span></a>
                                         <ul>
-                                            <li><a href="products.html">Our Products</a></li>
+                                            <li><a href="products.php">Our Products</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="clients.html">Clients</a>
+                                    <li><a href="clients.php">Clients</a>
                                     </li>
-                                    <li><a href="partners.html">Partners</a>
+                                    <li><a href="partners.php">Partners</a>
                                     </li>
-                                    <li><a href="career.html">Careers</a>
+                                    <li><a href="career.php">Careers</a>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li class="current"><a href="contact.php">Contact</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -100,7 +109,7 @@
                                     <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
                                         <li class="panel-outer">
                                             <div class="form-container">
-                                                <form method="post" action="http://t.commonsupport.com/induzin/blog.html">
+                                                <form method="post" action="">
                                                     <div class="form-group">
                                                         <input type="search" name="field-name" value="" placeholder="Search Here" required>
                                                         <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
@@ -123,7 +132,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" title=""><img src="images/precision_logo.jpeg" alt="" title=""></a>
+                    <a href="index.php" title=""><img src="images/precision_logo.jpeg" alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -144,7 +153,7 @@
             <div class="close-btn"><span class="icon flaticon-close-1"></span></div>
             
             <nav class="menu-box">
-            	<div class="nav-logo"><a href="index.html"><img src="images/precision_logo.jpeg" alt="" title=""></a></div>
+            	<div class="nav-logo"><a href="index.php"><img src="images/precision_logo.jpeg" alt="" title=""></a></div>
                 
                 <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
                 
@@ -166,15 +175,15 @@
     <!--Page Title-->
     <section class="page-title" style="background-image:url(images/background/8.jpg);">
         <div class="auto-container">
-            <h1>Services</h1>
-            <div class="titl">Customer Service focused on need, flexible, <br/>timely and at the right price.</div>
+            <h1>Contact Us</h1>
+            <div class="titl">Customer Service focused on need, flexible, <br/>timely and at the right price</div>
         </div>
         <!--Page Info-->
         <div class="page-info"> 
             <div class="auto-container clearfix">
                 <ul class="bread-crumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Services</li>
+                    <li><a href="index.php">Home</a></li>
+                    <li>Contact Us</li>
                 </ul>
             </div>
         </div>
@@ -182,192 +191,109 @@
     </section>
     <!--End Page Title-->
 
-    <!-- Feature Section Two -->
-    <section class="features-section-two">
-        <div class="auto-container">
-            <div class="row">
-                <!-- Content Column -->
-                <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <div class="sec-title">
-                            <span class="title">Clients Benefits</span>
-                            <h2>Why Would You Take <br>Our Services?</h2>
-                            <div class="text">PLL is fulfilling the needs of the Oil and Gas Industry in Nigeria. We are highly profiled and committed to the development of the Nigerian capacity in conjunction with our technical partners and carry out our operations in such a manner as to comply with requirements and provisions of the Nigerian Oil & Gas industry Content Development Act.</div>
-                        </div>
-                        <ul class="features-list">
-                            <li>
-                                <span class="count">01</span>
-                                <strong>Professionalism</strong>
-                                <p>We apply the concept of best ethical practice with INTEGRITY as our watch-word.</p>
-                            </li>
-                            <li>
-                                <span class="count">02</span>
-                                <strong>National Spread. </strong>
-                                <p>We leverage on the strength and presence of our parent comapny in major locations nationwide to provide timely and value adding services to our customers at very short notices. We are represented in the major oil producing states nationwide to enable us respond timely to their request.</p>
-                            </li>
-                            <li>
-                                <span class="count">03</span>
-                                <strong>Customer Focused</strong>
-                                <p>Customer Service focused on need, flexible, timely and at the right price.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Image Column -->
-                <div class="image-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="image-box">
-                        <figure class="image wow fadeInRight"><img src="images/resource/new2.jpg" alt=""></figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Feature Section Two -->
-
-    <!-- Services Section -->
-    <section class="services-section alternate">
+    <!--Services Section-->
+    <section class="contact-page-section">
         <div class="auto-container">
             <div class="sec-title">
-                <div class="row">
-                    <div class="col-lg-7 col-md-12">
-                        <span class="title">Technical</span>
-                        <h2>Precise Solutions</h2>
-                    </div>
-                    <div class="text-column col-lg-5 col-md-12">
-                        <div class="text">We have 14+ years of experience with providing wide area of specialty services works listed below.</div>
-                    </div>
-                </div>
+                <span class="title">our information</span>
+                <h2>Get In Touch</h2>
             </div>
 
-            <div class="carousel-outer">
-                <!-- Services Carousel -->
-                <div class="services-carousel owl-carousel owl-theme">
-                    <!-- service Block -->
-                    <div class="service-block">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/resource/p8.jpg" alt=""></figure>
-                                <div class="overlay-link">                            
-                                    <a href="images/resource/p8.jpg" class="lightbox-image" data-fancybox="Gallery"><span class="icon flaticon-add-1"></span></a>
+            <div class="row clearfix">
+                <!--Column-->
+                <div class="column col-lg-8 col-md-12 col-sm-12">
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <!--Contact Form-->
+                        <form method="post" action="contact.html" id="contact-form">
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                                    <input type="text" name="username" placeholder="Name" required>
                                 </div>
-                            </div>
-                            <div class="lower-content">
-                                <span class="icon flaticon-gas-pump"></span>
-                                <h3><a href="1.html">Fluid Intelligence & Pumping Solutions</a></h3>
-                                <div class="text">In partnership with a leading provider of pumping solutions, we offer this service to ...</div>
-                                <a href="1.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+                                
+                                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                                    <input type="email" name="email" placeholder="Email" required>
+                                </div>
 
-                    <!-- service Block -->
-                    <div class="service-block">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/resource/p2.jpg" alt=""></figure>
-                                <div class="overlay-link">                            
-                                    <a href="images/resource/p2.jpg" class="lightbox-image" data-fancybox="Gallery"><span class="icon flaticon-add-1"></span></a>
+                                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                                    <input type="text" name="phone" placeholder="Phone" required>
                                 </div>
+                                
+                                <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                                    <input type="text" name="subject" placeholder="Subject" required>
+                                </div>
+                                
+                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                </div>
+                                
+                                <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                    <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span class="btn-title">Send Message</span></button>
+                                </div>
+                                
                             </div>
-                            <div class="lower-content">
-                                <span class="icon flaticon-robot-arm"></span>
-                                <h3><a href="2.html">Instrumentation/Equipment Maintenance Services</a></h3>
-                                <div class="text">We provide equipment and instrumentation Repair and calibration services for FPSOs ...</div>
-                                <a href="2.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
+                        </form>
+                            
                     </div>
+                    <!--End Contact Form -->
+                </div>
+                <!--Column-->
+                <div class="column col-lg-4 col-md-12 col-sm-12">
+                    <div class="text">Feel free to get in touch. We are always open to discussing new projects, creative ideas or opportunities to be part of your visions</div>
 
-                    <!-- service Block -->
-                    <div class="service-block">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/resource/p3.jpg" alt=""></figure>
-                                <div class="overlay-link">                            
-                                    <a href="images/resource/p3.jpg" class="lightbox-image" data-fancybox="Gallery"><span class="icon flaticon-add-1"></span></a>
-                                </div>
-                            </div>
-                            <div class="lower-content">
-                                <span class="icon flaticon-refinery"></span>
-                                <h3><a href="3.html">Offshore Access Technology</a></h3>
-                                <div class="text">As the exclusive OEM representative, we provide and support access solutions manufactured by ...</div>
-                                <a href="3.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="contact-info">
+                        <li>
+                            <span class="icon fa fa-globe"></span> 
+                            <strong>Location </strong>
+                            25/27, UDO WOGU DRIVE CHEVY VIEW ESTATE
+                            Off Chevron Drive Lekki Lagos, Nigeria
+                        </li>
 
-                    <!-- service Block -->
-                    <div class="service-block">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/resource/p4.jpg" alt=""></figure>
-                                <div class="overlay-link">                            
-                                    <a href="images/resource/p4.jpg" class="lightbox-image" data-fancybox="Gallery"><span class="icon flaticon-add-1"></span></a>
-                                </div>
-                            </div>
-                            <div class="lower-content">
-                                <span class="icon flaticon-engineer"></span>
-                                <h3><a href="4.html">Engineering & Support Services</a></h3>
-                                <div class="text">We are capable of providing engineering and support services for both Onshore and Offshore projects ...</div>
-                                <a href="4.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+                        <li>
+                            <span class="icon fa fa-phone-volume"></span>
+                            <strong>Call Center</strong>
+                            <a href="tel:+2348022245814">+(234) 802-224-5814</a>, <a href="tel:+234017101021">+(234) 01-7101021</a>
+                        </li>
 
-                    <!-- service Block -->
-                    <div class="service-block">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/resource/p5.jpg" alt=""></figure>
-                                <div class="overlay-link">                            
-                                    <a href="images/resource/p5.jpg" class="lightbox-image" data-fancybox="Gallery"><span class="icon flaticon-add-1"></span></a>
-                                </div>
-                            </div>
-                            <div class="lower-content">
-                                <span class="icon flaticon-shopping-cart"></span>
-                                <h3><a href="5.html">Procurement Services</a></h3>
-                                <div class="text">We offer varied range of procurement services, ranging from complex project procurement ...</div>
-                                <a href="5.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- service Block -->
-                    <div class="service-block">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><img src="images/resource/p6.jpg" alt=""></figure>
-                                <div class="overlay-link">                            
-                                    <a href="images/resource/p6.jpg" class="lightbox-image" data-fancybox="Gallery"><span class="icon flaticon-add-1"></span></a>
-                                </div>
-                            </div>
-                            <div class="lower-content">
-                                <span class="icon flaticon-workers"></span>
-                                <h3><a href="6.html">Manpower Services</a></h3>
-                                <div class="text">Our Manpower services provision include permanent, temporary and as well as ...</div>
-                                <a href="6.html" class="read-more">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+                        <li>
+                            <span class="icon fa fa-envelope-open"></span>
+                            <strong>Email Us</strong> 
+                            <a href="mailto:info@precision-logistics.com">info@precision-logistics.com</a>
+                        </li>
+                    </ul>
+                    <ul class="social-icon-three">
+                        <li class="title">Follow Us</li>
+                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fab fa-skype"></span></a></li>
+                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End service Section -->
+    <!--End Services Section-->
 
-    <!-- Call To Action Two -->
-    <section class="call-to-action-two">
-        <div class="bg-pattern" style="background-image: url(images/icons/bg-pattern-2.png);"></div>
+    <!-- Contact Map Section -->
+    <section class="contact-map-section">
         <div class="auto-container">
-            <div class="content-box">
-                <h2>We Provide You The Highest Quality Work <br>That Meets Your Expectation.</h2>
-                <div class="text">Need a High Quality Project?</div>
-                <div class="btn-box"><a href="about.html" class="theme-btn btn-style-two"><span class="btn-title">Discover More</span></a></div>
+            <!-- Social Outer -->
+            <div class="map-outer">
+                <div class="map-canvas"
+                    data-zoom="12"
+                    data-lat="-37.817085"
+                    data-lng="144.955631"
+                    data-type="roadmap"
+                    data-hue="#ffc400"
+                    data-title="Envato"
+                    data-icon-path="images/icons/map-marker.png"
+                    data-content="Lagos, Nigeria<br/><a href='mailto:info@precision-logistics.com>info@precision-logistics.com </a>">
+                </div>
             </div>
         </div>
     </section>
-    <!--End Call To Action Two -->
+    <!--End Contact Map Section -->
 
     <!--Clients Section-->
     <section class="clients-section">
@@ -428,11 +354,11 @@
                                 <div class="footer-widget about-widget">
                                     <h2 class="widget-title">Quick Links</h2>
                                     <ul class="user-links">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="services.html">Our Services</a></li>
-                                        <li><a href="career.html">Careers</a></li>
-                                        <li><a href="contact.html">contact Us</a></li>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about.php">About Us</a></li>
+                                        <li><a href="services.php">Our Services</a></li>
+                                        <li><a href="career.php">Careers</a></li>
+                                        <li><a href="contact.php">contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -453,7 +379,7 @@
                                         <ul class="contact-list">
                                             <li>
                                                 <span class="icon flaticon-clock-1 icon__white"></span>
-                                                <strong class="icon__white">Office Hours</strong>
+                                                <strong class="icon_white icon__white">Office Hours</strong>
                                                 <div class="text">Mon - Fri: 09:00 am - 05:00 pm</div>
                                             </li>
 
@@ -486,8 +412,8 @@
                     <div class="footer-nav">
                         <ul class="clearfix">
                            
-                            <li><a href="contact.html">Contact</a></li> 
-                            <li><a href="services.html">Services</a></li>    
+                           <li><a href="contact.php">Contact</a></li> 
+                           <li><a href="services.php">Services</a></li>  
                         </ul>
                     </div>
                     
@@ -506,10 +432,16 @@
 <script src="js/jquery.fancybox.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/wow.js"></script>
+<script src="js/isotope.js"></script>
 <script src="js/appear.js"></script>
+<script src="js/validate.js"></script>
 <script src="js/scrollbar.js"></script><script src="js/script.js"></script>
+<!--Google Map APi Key-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcaOOcFcQ0hoTqANKZYz-0ii-J0aUoHjk"></script>
+<script src="js/map-script.js"></script>
+<!--End Google Map APi-->
 
 </body>
 
-<!-- Mirrored from t.commonsupport.com/induzin/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Oct 2019 14:27:31 GMT -->
+<!-- Mirrored from t.commonsupport.com/induzin/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 14 Oct 2019 14:28:25 GMT -->
 </html>
